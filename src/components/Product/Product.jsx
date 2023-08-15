@@ -2,12 +2,14 @@ import React from 'react';
 import './Product.css' ;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { addToDb } from '../../utilities/fakedb';
 
 const Product = (props) => {
    
 
     const{img,name,seller,ratings,price} = props.product;
     const handleAddToCart = props.handleAddToCart;
+
 
 
 
