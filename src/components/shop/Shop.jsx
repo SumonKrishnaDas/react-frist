@@ -21,7 +21,7 @@ const storedCart = getShoppingCart();
 const savedCart =[];
 for(const id in storedCart){
 
-  const addedProduct = products.find(prduct=>prduct.id === id);  
+  const addedProduct = products.find(product=>product.id === id);  
   
 
   if(addedProduct){
