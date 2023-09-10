@@ -3,7 +3,8 @@ import Cart from '../Cart/Cart';
 import { useLoaderData } from 'react-router-dom';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import './order.css'
-import { removeFromDb } from '../../utilities/fakedb';
+import { deleteShoppingCart, removeFromDb } from '../../utilities/fakedb';
+import { Link } from 'react-router-dom';
 
 const Order = () => {
     const savedCart = useLoaderData();
@@ -17,6 +18,15 @@ const Order = () => {
 
 
     }
+
+ const handleClearCart =()=>{
+
+    setCart([]);
+    deleteShoppingCart();
+ }
+
+
+
 
 
     return (
@@ -42,7 +52,11 @@ cart.map( product => <ReviewItem key={product.id} product={product} handelRemove
 
             <div className='cart-container' > 
 
-                <Cart cart={[savedCart]}> </Cart>
+                <Cart cart={cart}   handleClearCart={handleClearCart} > 
+
+                <Link  className='review-link' to="/checkout"><button className='proceed-btn'>Proceed Checkout </button>    </Link>
+             
+                </Cart>
 
 
             </div>

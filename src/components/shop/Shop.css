@@ -13,3 +13,22 @@ grid-template-columns: repeat(3,1fr);
 gap:45px;
 
 }
+
+.review-btn{
+
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+     margin: 10px auto;
+     background: red;
+     color: white;
+     text-decoration: none;
+
+
+}
+.proceed-link{
+
+text-decoration: none;
+
+
+}

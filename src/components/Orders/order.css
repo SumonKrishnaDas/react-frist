@@ -17,7 +17,26 @@
 
    .review-container{
 
- margin: 50px; auto
+ margin: 50px; auto;
 
 
    }
+
+   .proceed-btn{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+     margin: 10px auto;
+     background:rgb(59, 59, 6);
+     color: white;
+
+
+
+
+   }
+.review-link{
+
+text-decoration: none;
+}
+
+

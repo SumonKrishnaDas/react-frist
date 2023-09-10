@@ -12,6 +12,7 @@ import {
 import Order from './components/Orders/Order.jsx'
 import Inventory from './Inventory/Inventory.jsx'
 import Login from './components/Login/Login.jsx'
+import Checkout from './components/Checkoout/Checkout.jsx'
 
 
 
@@ -40,6 +41,11 @@ loader: cartProductsLoader
 {
   path:'inventory',
   element:<Inventory> </Inventory>
+
+},
+{
+path:'checkout',
+element:<Checkout> </Checkout>
 
 },
 
